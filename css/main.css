@@ -20,7 +20,7 @@ body{
 	flex-flow: column nowrap;
 	justify-content: flex-start;
 	align-items: flex-end;
-	background-image: url("imgs/emptychair.jpg");
+	background-image: url("../imgs/emptychair.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: left 23.3% bottom 79%;
