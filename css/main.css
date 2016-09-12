@@ -1,0 +1,98 @@
+/*UNIVERSAL STYLES*/
+*{
+	box-sizing: border-box;
+	overflow: hidden;
+	min-height: 0;
+	min-width: 0;
+}
+:root, html, body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	display: block;
+}
+
+.away{/*hides contents*/
+	display: none;
+}
+body{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: flex-end;
+	background-image: url("imgs/emptychair.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left 23.3% bottom 79%;
+	font-size: 12.8px;
+}
+
+/*styling for devices with JS disabled*/
+p{
+	display: block;
+	font-family: serif;
+	text-align: right;
+	line-height: 1.1;
+	margin: 0.5em 0.5em auto auto;
+	width: 40%;
+}
+p.pref{/*preferred font*/
+	font-family: 'Over the Rainbow', serif;
+	
+}
+/*font-sizing*/
+@media only screen and (min-width: 199px) {
+  body{
+    font-size: 25.6px; } }
+@media only screen and (min-width: 499px){
+	body{
+		font-size: 38.4px;
+	}
+}
+@media only screen and (min-width: 799px){
+	body{
+		font-size: 51.2px;
+	}
+}
+@media only screen and (min-width: 1099px){
+	body{
+		font-size: 64px;
+	}
+}
+@media only screen and (min-width: 1399px){
+	body{
+		font-size: 89.6px;
+	}
+}
+
+/*Font adjustment - per aspect ratio*/
+@media only screen and (min-width: 299px) and (min-aspect-ratio: 1/1){
+	body{
+		flex-flow: row nowrap;
+		justify-content: flex-end;
+		align-items: center;
+	}
+	p{
+		margin: 0 1em 1em 0;
+	}
+}
+@media only screen and (min-aspect-ratio: 9/7){
+	body{
+		flex-flow: row nowrap;
+		justify-content: flex-end;
+		align-items: center;
+	}
+	p{
+		font-size: 50%;
+		width: 50%;
+		margin: 0 1em 1em 0;
+	}
+}
+
+@media only screen and (min-aspect-ratio: 9/5){
+	p{
+		font-size: 40%;
+		text-align: left;
+		margin: 0 1em 0 0;
+	}
+}
