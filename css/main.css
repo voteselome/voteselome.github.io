@@ -8,16 +8,31 @@
   height: 100%;
   width: 100%;
 }
+
+@supports (height: 100vh) {
+	:root, html, body {
+		height: 100vh;
+	}
+}
+@supports (width: 100vw) {
+	:root, html, body {
+		width: 100vw;
+	}
+}
+
 body{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
   background: rgba(225, 205, 0, 1);
-  overflow: hidden;
 }
 div{
   position: relative;
   margin: 0 0 auto auto;
-  width: 92%;
+  width: 90%;
   height: 96%;
-  background: url('../imgs/fullrowbw.jpg') center/cover no-repeat;
+  background: url('../imgs/fullrowbw.jpg') center left/cover no-repeat;
 }
 div:before {
   content: ' ';
@@ -47,4 +62,9 @@ h1 {
     1px -1px 0px rgba(0, 0, 0, 1),
     1px 1px 0px rgba(0, 0, 0, 1);
   z-index: 1;
+}
+@supports (font-size: 1vw) {
+	h1 {
+		font-size: 24vw;
+	}
 }
