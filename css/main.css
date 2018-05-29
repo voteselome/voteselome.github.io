@@ -31,8 +31,11 @@ div{
   position: relative;
   margin: 0 0 auto auto;
   width: 90%;
-  height: 96%;
-  background: url('../imgs/fullrowbw.jpg') center left/cover no-repeat;
+  height: 100%;
+}
+img {
+	width: 100%;
+	height: auto;
 }
 div:before {
   content: ' ';
